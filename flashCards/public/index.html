@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Learn Italian Flash Cards</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 	Styles -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+<!--       Scripts -->
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/flashCardController.js"></script>
+
+</head>
+
+
+
+<body ng-app="flashCardApp">
+<div class= "container-fluid" ng-controller="flashCardController">
+
+
+
+ <div  class= "square" ng-repeat="cards in flashcards" ng-show ="appState == 'Italian'"> {{ cards.Italian| json }} <br>
+ 
+ <input type='checkbox' name='checkbox'> Got it
+</div>
+
+
+
+</div>
+<!-- End of fluid container -->
+
+</body>
+</html></header>

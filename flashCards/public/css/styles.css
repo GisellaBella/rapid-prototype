@@ -1,0 +1,12 @@
+.square {
+	width:200px;
+	height: 200px;
+	padding: 50px;
+	display: block;
+	float:left;
+	background-color: white;
+	border: solid black 3px;
+	text-align: center;
+	vertical-align: center;
+	margin:10px;
+}
